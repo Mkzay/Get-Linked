@@ -1,7 +1,7 @@
 export default function Main() {
   return (
     <main className="flex flex-col items-center justify-center font-montserrat">
-      <h2 className="text-white text-base font-bold italic pt-10 pb-14">
+      <h2 className="text-white text-base/normal font-bold italic pt-10 pb-14 w-[324px]">
         Igniting a Revolution in HR Innovation
       </h2>
       <div>
@@ -14,7 +14,7 @@ export default function Main() {
             <img src="./images/chain.png" />
             <img src="./images/boom.png" />
           </h1>
-          <p className="text-[13px, 21.58px] font-normal w-80 pb-6">
+          <p className="text-[13px]/[21.58px] font-normal w-[264px] pb-6">
             Participate in getlinked tech Hackathon 2023 stand a chance to win a
             Big prize
           </p>
