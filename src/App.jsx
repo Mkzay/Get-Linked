@@ -11,7 +11,7 @@ import Privacy from "./component/policy";
 import Footer from "./component/footer";
 export default function App() {
   return (
-    <div className="flex items-center justify-center flex-col bg-first-1 text-white">
+    <div className="flex items-center justify-center flex-col bg-first-1 text-white font-montserrat">
       <Nav />
       <Main />
       <Section1 />

@@ -8,7 +8,7 @@ export default function Timeline() {
           event.
         </p>
       </div>
-      <div className="flex flex-col gap-8">
+      <div className="flex items-center justify-center flex-col gap-8">
         <div className="flex justify-center items-center flex-row gap-2">
           <div className="flex items-center flex-col gap-1">
             <div className="bg-first-3 w-[2px] h-[77px]"></div>

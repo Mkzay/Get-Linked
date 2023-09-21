@@ -1,6 +1,6 @@
 export default function Partners() {
   return (
-    <div className="flex flex-col gap-10 pb-[104px] border-b border-white">
+    <div className="flex flex-col gap-10 pb-[104px] border-b border-white w-full items-center">
       <div className="flex items-center justify-center flex-col pt-10 gap-1">
         <h2 className="text-white text-xl font-bold">Partners and Sponsors</h2>
         <p className="text-white text-center text-xs/5 font-normal w-72">

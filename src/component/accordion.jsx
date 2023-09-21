@@ -1,21 +1,21 @@
 export default function Accordion() {
   return (
-    <div className="flex flex-col pt-16 pb-12 gap-[86px] border-b border-white">
+    <div className="flex items-center justify-center flex-col pt-16 pb-12 gap-[86px] border-b border-white w-full md:flex-row md:gap-0">
       <div>
-        <div className="flex items-center justify-center flex-col">
-          <h2 className="flex items-center flex-col text-xl font-bold text-white pb-[9px]">
+        <div className="flex items-center justify-center flex-col md:items-start">
+          <h2 className="flex items-center flex-col text-xl font-bold text-white pb-[9px] md:text-[32px]/0px md:items-start">
             Frequently Asked
             <span className="text-first-3">Questions</span>
           </h2>
-          <p className="text-center text-white text-[13px]/[27.5px] font-normal w-60">
+          <p className="text-center text-white text-[13px]/[27.5px] font-normal w-60 md:w-[342px] md:text-left md:text-sm/[27.5px]">
             We got answers to the questions that you might want to ask about
             <span className="font-bold"> getlinked Hackathon 1.0</span>
           </p>
         </div>
-        <div className="flex items-center justify-center flex-col">
+        <div className="flex items-center justify-center flex-col md:items-start">
           <div>
             <div className="flex items-center border-b border-first-3 w-full pt-8">
-              <div className="text-white text-xs/[18px] font-normal w-[270px] h-10 pb-2">
+              <div className="text-white text-xs/[18px] font-normal w-[270px] h-10 pb-2 md:text-sm/[27.5px] md:w-[390px]">
                 Can I work on a project I started before the hackathon?
               </div>
               <button className="relative -bottom-1">
@@ -29,7 +29,7 @@ export default function Accordion() {
 
           <div>
             <div className="flex items-center border-b border-first-3 w-full pt-4">
-              <div className="text-white text-xs/[18px] font-normal w-[270px] h-10 pb-2">
+              <div className="text-white text-xs/[18px] font-normal w-[270px] h-10 pb-2 md:text-sm/[27.5px] md:w-[390px]">
                 What happens if I need help during the hackathon?
               </div>
               <button className="relative -bottom-1">
@@ -43,8 +43,8 @@ export default function Accordion() {
 
           <div>
             <div className="flex items-center border-b border-first-3 w-full pt-4">
-              <div className="text-white text-xs/[18px] font-normal w-[270px] h-10 pb-2">
-                What happens if I don&apost have an idea for a project?
+              <div className="text-white text-xs/[18px] font-normal w-[270px] h-10 pb-2 md:text-sm/[27.5px] md:w-[390px]">
+                What happens if I dont have an idea for a project?
               </div>
               <button className="relative -bottom-1">
                 <img src="./images/plus.png" />
@@ -57,7 +57,7 @@ export default function Accordion() {
 
           <div>
             <div className="flex items-center border-b border-first-3 w-full pt-4">
-              <div className="text-white text-xs/[18px] font-normal w-[270px] pr-12 h-10 pb-2">
+              <div className="text-white text-xs/[18px] font-normal w-[270px] pr-12 h-10 pb-2 md:text-sm/[27.5px] md:w-[390px]">
                 Can I join a team or do I have to come with one?
               </div>
               <button className="relative -bottom-1">
@@ -71,7 +71,7 @@ export default function Accordion() {
 
           <div>
             <div className="flex items-center border-b border-first-3 w-full pt-4">
-              <div className="text-white text-xs/[18px] font-normal w-[270px] pr-20 h-10 pb-2">
+              <div className="text-white text-xs/[18px] font-normal w-[270px] pr-20 h-10 pb-2 md:text-sm/[27.5px] md:w-[390px]">
                 What happens after the hackathon ends?
               </div>
               <button className="relative -bottom-1">
@@ -86,7 +86,7 @@ export default function Accordion() {
 
           <div>
             <div className="flex items-center border-b border-first-3 w-full pt-4">
-              <div className="text-white text-xs/[18px] font-normal w-[270px] h-10 pb-2">
+              <div className="text-white text-xs/[18px] font-normal w-[270px] h-10 pb-2 md:text-sm/[27.5px] md:w-[390px]">
                 Can I work on a project I started before the hackathon?
               </div>
               <button className="relative -bottom-1">
@@ -99,8 +99,12 @@ export default function Accordion() {
           </div>
         </div>
       </div>
-      <div>
-        <img src="./images/cwok-casual-211.png" />
+      <div className="flex items-center justify-center">
+        <img className="md:hidden" src="./images/cwok-casual-211.png" />
+        <img
+          className="hidden md:block"
+          src="./images/cwok-casual-211-desktop.png"
+        />
       </div>
     </div>
   );

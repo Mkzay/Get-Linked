@@ -1,29 +1,35 @@
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-[60px]">
-      <div className="flex flex-col">
-        <div className="flex flex-col gap-1">
-          <h2 className="text-xl/normal font-bold pb-3">
+    <footer className="flex items-center justify-center  flex-col gap-[60px] bg-[url('../images/footer.png')] bg-no-repeat bg-cover w-full pt-16 md:items-center md:justify-center">
+      <div className="flex flex-col md:flex-row md:gap-20 md:justify-between">
+        <div>
+          <h2 className="text-xl/normal font-bold pb-3 md:text-[32px]">
             get <span className="text-first-3">linked</span>
           </h2>
-          <p className="text-xs/5 font-normal w-[271px]">
+          <p className="text-xs/5 font-normal w-[271px] md:w-[490px] md:text-sm/[27.5px]">
             Getlinked Tech Hackathon is a technology innovation program
             established by a group of organizations with the aim of showcasing
             young and talented individuals in the field of technology
           </p>
-          <div className="flex gap-1 mt-8 pb-8">
+          <div className="flex gap-1 mt-8 pb-8 md:text-sm/[27.5px]">
             <p className="text-xs/5 font-normal">Terms of Use</p>
             <span className="w-[2px] h-[17px] bg-first-3"></span>
             <p className="text-xs/5 font-normal">Privacy Policy</p>
           </div>
+        </div>
+        <div>
           <div className="pb-5">
-            <h2 className="text-sm/6 font-semibold text-first-3">
+            <h2 className="text-sm/6 font-semibold text-first-3 md:pb-3">
               Useful Links
             </h2>
             <ul>
-              <li className="text-white text-xs/5 font-normal">Overview</li>
-              <li className="text-white text-xs/5 font-normal">Timeline</li>
-              <li className="text-white text-xs/5 font-normal">FAQs</li>
+              <li className="text-white text-xs/5 font-normal md:pb-3">
+                Overview
+              </li>
+              <li className="text-white text-xs/5 font-normal md:pb-3">
+                Timeline
+              </li>
+              <li className="text-white text-xs/5 font-normal md:pb-3">FAQs</li>
               <li className="text-white text-xs/5 font-normal">Register</li>
             </ul>
           </div>
@@ -36,8 +42,10 @@ export default function Footer() {
             <img src="./images/x.svg" />
             <img src="./images/linkedin.svg" />
           </div>
+        </div>
+        <div>
           <div>
-            <h2 className="text-first-3 text-sm/6 font-semibold pb-2">
+            <h2 className="text-first-3 text-sm/6 font-semibold pb-2 md:pb-5">
               Contact us
             </h2>
             <ul>

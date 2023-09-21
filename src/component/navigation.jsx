@@ -7,15 +7,15 @@ export default function Nav() {
         </h2>
       </div>
       <div>
-        <button>
+        <button className="md:hidden">
           <img src="./images/menu-icon.svg" />
         </button>
       </div>
       <aside className="hidden flex-auto flex-col justify-center fixed top-0 right-0 bg-first-1 text-white">
-        <button>
+        <button className="md:hidden">
           <img src="./image/menu-icon.svg" />
         </button>
-        <ul>
+        <ul className="md:flex ">
           <li>
             <a>Timeline</a>
           </li>
