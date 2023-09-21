@@ -26,7 +26,7 @@ export default function Main() {
             <sub className="text-sm">M</sub> 00<sub className="text-sm">S</sub>
           </h1>
         </div>
-        <div className="bg-[url('./images/man.png')] bg-no-repeat bg-cover pb-4">
+        <div className="bg-[url('../images/man.png')] bg-no-repeat bg-cover pb-4">
           <img src="./images/orb.png" />
         </div>
       </div>

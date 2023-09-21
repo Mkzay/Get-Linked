@@ -1,6 +1,6 @@
 export default function Privacy() {
   return (
-    <div className="flex flex-col pt-[71px] pb-20 bg-[url('./images/lock.png')] bg-no-repeat bg-[200%_82%] bg-contain">
+    <div className="flex flex-col pt-[71px] pb-20 bg-[url('../images/lock.png')] bg-no-repeat bg-[200%_82%] bg-contain">
       <div>
         <div className="pb-7">
           <h2 className="flex items-center flex-col text-xl/normal font-bold text-white pb-[9px]">

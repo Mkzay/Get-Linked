@@ -1,6 +1,6 @@
 export default function Prize() {
   return (
-    <div className="bg-[url('./images/premum.png')] bg-no-repeat bg-cover bg-blend-color-burn pt-[72px] pb-24 w-full">
+    <div className="bg-[url('../images/premum.png')] bg-no-repeat bg-cover bg-blend-color-burn pt-[72px] pb-24 w-full">
       <div className="flex justify-center items-center flex-col mb-10">
         <h2 className="flex items-center flex-col text-xl/normal font-bold text-white pb-[9px]">
           Prizes and
