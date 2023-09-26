@@ -1,4 +1,47 @@
+import React, { useState } from "react";
+import "tailwindcss/tailwind.css"; // Import Tailwind CSS
+
 export default function Accordion() {
+  // Define an array of FAQ items with questions and answers
+  const faqs = [
+    {
+      question: "Can I work on a project I started before the hackathon?",
+      answer: "No, you may not.",
+    },
+    {
+      question: "What happens if I need help during the hackathon?",
+      answer: "Surpass your limits.",
+    },
+    {
+      question: "What happens if I don't have an idea for a project?",
+      answer: "Omo, go and make research o!",
+    },
+    {
+      question: "Can I join a team or do I have to come with one?",
+      answer: "You can join a team, or do it alone. The choice is yours.",
+    },
+    {
+      question: "What happens after the hackathon ends?",
+      answer:
+        "The prizes are given to the winners, and the other participants go on to better themselves.",
+    },
+    {
+      question: "Can I work on a project I started before the hackathon?",
+      answer: "I don't know mehn, I think so.",
+    },
+  ];
+
+  // Define state to track which FAQ items are open or closed
+  const [openItems, setOpenItems] = useState({});
+
+  // Function to toggle the open/close state of an FAQ item
+  const toggleItem = (index) => {
+    setOpenItems((prevState) => ({
+      ...prevState,
+      [index]: !prevState[index],
+    }));
+  };
+
   return (
     <div className="flex items-center justify-center flex-col pt-16 pb-12 gap-[86px] border-b border-white w-full md:flex-row md:gap-0">
       <div>
@@ -13,97 +56,43 @@ export default function Accordion() {
           </p>
         </div>
         <div className="flex items-center justify-center flex-col md:items-start">
-          <div>
-            <div className="flex items-center border-b border-first-3 w-full pt-8">
-              <div className="text-white text-xs/[18px] font-normal w-[270px] h-10 pb-2 md:text-sm/[27.5px] md:w-[390px]">
-                Can I work on a project I started before the hackathon?
+          {faqs.map((faq, index) => (
+            <div key={index}>
+              <div className="flex items-center border-b border-first-3 w-full pt-4">
+                <div
+                  className="text-white text-xs/[18px] font-normal w-[270px] h-10 pb-2 md:text-sm/[27.5px] md:w-[390px] cursor-pointer"
+                  onClick={() => toggleItem(index)}
+                >
+                  {faq.question}
+                </div>
+                <button
+                  className={`relative -bottom-1 transform ${
+                    openItems[index] ? "rotate-0" : "rotate-90"
+                  } transition-transform`}
+                  onClick={() => toggleItem(index)}
+                >
+                  <img src="./images/plus.png" alt="Toggle Icon" />
+                </button>
               </div>
-              <button className="relative -bottom-1">
-                <img src="./images/plus.png" />
-              </button>
+              {openItems[index] && (
+                <div className="text-white text-xs/[18px] font-normal w-72  h-10 py-2 md:w-96">
+                  {faq.answer}
+                </div>
+              )}
             </div>
-            <div className="text-white text-xs/[18px] font-normal w-[270px] hidden">
-              No, you may not.
-            </div>
-          </div>
-
-          <div>
-            <div className="flex items-center border-b border-first-3 w-full pt-4">
-              <div className="text-white text-xs/[18px] font-normal w-[270px] h-10 pb-2 md:text-sm/[27.5px] md:w-[390px]">
-                What happens if I need help during the hackathon?
-              </div>
-              <button className="relative -bottom-1">
-                <img src="./images/plus.png" />
-              </button>
-            </div>
-            <div className="text-white text-xs/[18px] font-normal w-[270px] hidden">
-              Surpass your limits.
-            </div>
-          </div>
-
-          <div>
-            <div className="flex items-center border-b border-first-3 w-full pt-4">
-              <div className="text-white text-xs/[18px] font-normal w-[270px] h-10 pb-2 md:text-sm/[27.5px] md:w-[390px]">
-                What happens if I dont have an idea for a project?
-              </div>
-              <button className="relative -bottom-1">
-                <img src="./images/plus.png" />
-              </button>
-            </div>
-            <div className="text-white text-xs/[18px] font-normal w-[270px] h-10 hidden">
-              Omo, go and make research o!
-            </div>
-          </div>
-
-          <div>
-            <div className="flex items-center border-b border-first-3 w-full pt-4">
-              <div className="text-white text-xs/[18px] font-normal w-[270px] pr-12 h-10 pb-2 md:text-sm/[27.5px] md:w-[390px]">
-                Can I join a team or do I have to come with one?
-              </div>
-              <button className="relative -bottom-1">
-                <img src="./images/plus.png" />
-              </button>
-            </div>
-            <div className="text-white text-xs/[18px] font-normal w-[270px] h-10 hidden">
-              You can join a team, or do it alone. The choice is yours.
-            </div>
-          </div>
-
-          <div>
-            <div className="flex items-center border-b border-first-3 w-full pt-4">
-              <div className="text-white text-xs/[18px] font-normal w-[270px] pr-20 h-10 pb-2 md:text-sm/[27.5px] md:w-[390px]">
-                What happens after the hackathon ends?
-              </div>
-              <button className="relative -bottom-1">
-                <img src="./images/plus.png" />
-              </button>
-            </div>
-            <div className="text-white text-xs/[18px] font-normal w-[270px] h-10 hidden">
-              The prizes are given to the winners, and the other participants go
-              on to better themselves.
-            </div>
-          </div>
-
-          <div>
-            <div className="flex items-center border-b border-first-3 w-full pt-4">
-              <div className="text-white text-xs/[18px] font-normal w-[270px] h-10 pb-2 md:text-sm/[27.5px] md:w-[390px]">
-                Can I work on a project I started before the hackathon?
-              </div>
-              <button className="relative -bottom-1">
-                <img src="./images/plus.png" />
-              </button>
-            </div>
-            <div className="text-white text-xs/[18px] font-normal w-[270px] h-10 hidden">
-              I don&apost know mehn, I think so.
-            </div>
-          </div>
+          ))}
         </div>
       </div>
       <div className="flex items-center justify-center">
-        <img className="md:hidden" src="./images/cwok-casual-211.png" />
+        <img
+          className="md:hidden"
+          src="./images/cwok-casual-211.png"
+          alt="Mobile Image"
+        />
         <img
           className="hidden md:block"
           src="./images/cwok-casual-211-desktop.png"
+          alt="Desktop Image"
         />
       </div>
     </div>
