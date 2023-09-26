@@ -8,16 +8,31 @@ export default function Partners() {
           companies as its partners and sponsors
         </p>
       </div>
-      <div className="w-[333px] h-[148.59px] border-first-3 border pt-10 rounded-md">
-        <div className="flex items-center justify-center flex-row gap-10 pb-3">
-          <img src="./images/liberty.png" />
-          <img src="./images/lpay.png" />
-          <img src="./images/winwise.png" />
+      <div className="w-[333px] h-[170px] border-first-3 border pt-10 rounded-md md:w-[1255px] md:h-[560px] md:flex md:items-center md:justify-center md:flex-col md:gap-10">
+        <div className="flex items-center justify-center flex-row gap-10 pb-3 md:pr-20">
+          <img className="md:hidden" src="./images/liberty.png" />
+          <img className="hidden md:block" src="./images/libert-desktop.png" />
+          <div className="w-[2px] h-[29.844px] bg-first-2 md:w-1 md:h-28"></div>
+          <img className="md:hidden" src="./images/lpay.png" />
+          <img className="hidden md:block" src="./images/lpay-desktop.png" />
+          <div className="w-[2px] h-[29.844px] bg-first-2 md:w-1 md:h-28"></div>
+          <img className="md:hidden" src="./images/winwise.png" />
+          <img className="hidden md:block" src="./images/winwise-desktop.png" />
         </div>
-        <div className="flex items-center justify-center flex-row gap-10">
-          <img src="./images/wisper.png" />
-          <img src="./images/paybox.png" />
-          <img src="./images/vuzual.png" />
+        <div className="flex items-center justify-center gap-12 md:pr-20">
+          <div className="w-[68.271px] h-[2px] bg-first-2 md:w-64 md:h-1"></div>
+          <div className="w-[68.271px] h-[2px] bg-first-2 md:w-64 md:h-1"></div>
+          <div className="w-[68.271px] h-[2px] bg-first-2 md:w-64 md:h-1"></div>
+        </div>
+        <div className="flex items-center justify-center flex-row gap-10 pt-5">
+          <img className="md:hidden" src="./images/wisper.png" />
+          <img className="hidden md:block" src="./images/wisper-desktop.png" />
+          <div className="w-[2px] h-[29.844px] bg-first-2 md:w-1 md:h-28"></div>
+          <img className="md:hidden" src="./images/paybox.png" />
+          <img className="hidden md:block" src="./images/paybox-desktop.png" />
+          <div className="w-[2px] h-[29.844px] bg-first-2 md:w-1 md:h-28"></div>
+          <img className="md:hidden" src="./images/vuzual.png" />
+          <img className="hidden md:block" src="./images/vuzual-desktop.png" />
         </div>
       </div>
     </div>
