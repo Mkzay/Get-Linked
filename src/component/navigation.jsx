@@ -10,7 +10,7 @@ export default function Nav() {
   };
 
   return (
-    <header className="flex items-center justify-between bg-first-1 pt-[34px] pb-7 px-12 border-[#FFF] border-b w-full">
+    <header className="flex items-center justify-between bg-first-1 pt-[34px] pb-7 px-12 border-[#FFF] border-b w-full md:fixed top-0 md:z-50">
       <div>
         <h2 className="text-white text-xl font-bold md:text-4xl/normal">
           get<span className="text-first-3">linked</span>
