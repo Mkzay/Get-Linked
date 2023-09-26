@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import "tailwindcss/tailwind.css"; // Import Tailwind CSS
 
@@ -22,8 +23,7 @@ export default function Accordion() {
     },
     {
       question: "What happens after the hackathon ends?",
-      answer:
-        "The prizes are given to the winners, and God bless the others.",
+      answer: "The prizes are given to the winners, and God bless the others.",
     },
     {
       question: "Can I work on a project I started before the hackathon?",

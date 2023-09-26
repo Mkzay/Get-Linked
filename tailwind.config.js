@@ -17,12 +17,20 @@ export default {
       },
       keyframes: {
         spin: {
-          "0%": { transform: "rotate(0deg)" },
+          from: { transform: "translate(0deg)" },
+          "0%": { transform: "translate(0deg)" },
           "100%": { transform: "rotate(360deg)" },
+          to: { transform: "translate(0deg)" },
+        },
+        move: {
+          from: { transform: "translateX(0)" },
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(50%)" },
         },
       },
       animation: {
-        spin: "spin 1s linear infinite",
+        spin: "spin 4s linear infinite",
+        move: "move 4s linear infinite",
       },
     },
   },
