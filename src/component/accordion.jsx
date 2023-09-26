@@ -18,12 +18,12 @@ export default function Accordion() {
     },
     {
       question: "Can I join a team or do I have to come with one?",
-      answer: "You can join a team, or do it alone. The choice is yours.",
+      answer: "You can join a team, or do it alone.",
     },
     {
       question: "What happens after the hackathon ends?",
       answer:
-        "The prizes are given to the winners, and the other participants go on to better themselves.",
+        "The prizes are given to the winners, and God bless the others.",
     },
     {
       question: "Can I work on a project I started before the hackathon?",
