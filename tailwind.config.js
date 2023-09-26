@@ -15,6 +15,15 @@ export default {
         "first-3": "#D434FE",
         "first-4": "#FF26B9",
       },
+      keyframes: {
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
+      animation: {
+        spin: "spin 4s linear infinite",
+      },
     },
   },
   plugins: [],
