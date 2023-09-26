@@ -41,7 +41,7 @@ export default function Main() {
           Igniting a Revolution in HR Innovation
         </h2>
       </div>
-      <div className="flex flex-col md:flex-row px-12">
+      <div className="flex flex-col lg:flex-row px-12">
         <div className="flex flex-col items-center justify-center md:items-start pb-20">
           <h1 className="text-white text-[32px] font-bold pb-[3px] md:text-[70px]/normal">
             getlinked Tech
