@@ -70,7 +70,7 @@ export default function Main() {
             <sub className="text-sm">S</sub>
           </h1>
         </div>
-        <div className="bg-[url('../images/man.png')] bg-no-repeat bg-cover md:bg-cover pb-4 h-full w-full">
+        <div className="bg-[url('../images/man.png')] bg-no-repeat bg-cover md:bg-cover pb-4 h-full">
           <img className="md:hidden animate-spin" src="./images/orb.png" />
           <img
             className="hidden md:block animate-spin"
